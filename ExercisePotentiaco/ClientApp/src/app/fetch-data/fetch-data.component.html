@@ -1,0 +1,16 @@
+<h1 id="tableLabel">User Sum Subordinates</h1>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="subordinates">
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Total Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of subordinates">
+      <td>{{ item.Name }}</td>
+      <td>{{ item.TotalSubordinates }}</td>
+    </tr>
+  </tbody>
+</table>
